@@ -1,0 +1,130 @@
+
+```html
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Athanatos</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0b1020;
+color:white;
+}
+header{
+padding:25px 20px;
+background:#151d35;
+text-align:center;
+border-bottom:2px solid #7665ff;
+}
+header h1{
+color:#a99cff;
+font-size:32px;
+margin:5px;
+}
+header p{color:#c4c9df}
+nav{
+display:flex;
+justify-content:space-around;
+padding:15px 5px;
+background:#11182c;
+}
+nav a{
+color:#c4c9df;
+text-decoration:none;
+font-size:14px;
+}
+main{padding:20px}
+.hero{
+margin-top:15px;
+padding:28px 18px;
+border-radius:18px;
+background:linear-gradient(135deg,#272052,#172c49);
+text-align:center;
+}
+.hero h2{font-size:26px;color:#c3b7ff}
+.hero p{line-height:1.8;color:#e0e5f5}
+.btn{
+background:#7867ff;
+color:white;
+border:0;
+padding:13px 22px;
+border-radius:10px;
+font-size:16px;
+margin-top:10px;
+}
+.section-title{color:#b5a8ff;margin-top:30px}
+.card{
+background:#151d35;
+padding:18px;
+margin:12px 0;
+border-radius:14px;
+border:1px solid #293353;
+}
+.card h3{margin-top:0;color:#d4ceff}
+.card p{color:#c4c9df;line-height:1.7}
+footer{
+text-align:center;
+padding:25px;
+color:#9da6c5;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>ATHANATOS</h1>
+<p>عالم الحكايات والأساطير</p>
+</header>
+
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#stories">القصص</a>
+<a href="#about">حول التطبيق</a>
+</nav>
+
+<main id="home">
+<section class="hero">
+<h2>مرحباً بك في أثاناتوس</h2>
+<p>
+اكتشف عوالم جديدة، وشخصيات أسطورية،
+وأسراراً تنتظر من يكشفها.
+</p>
+<button class="btn" onclick="document.getElementById('stories').scrollIntoView({behavior:'smooth'})">
+اكتشف الحكايات
+</button>
+</section>
+
+<h2 class="section-title" id="stories">عالم القصص</h2>
+
+<div class="card">
+<h3>⚔️ أساطير أثاناتوس</h3>
+<p>رحلة إلى عالم غامض مليء بالأسرار والمغامرات.</p>
+<button class="btn" onclick="alert('قريباً ستبدأ الرحلة!')">
+اقرأ المزيد
+</button>
+</div>
+
+<div class="card">
+<h3>🌌 عوالم مجهولة</h3>
+<p>اكتشف حضارات جديدة وشخصيات ذات مصائر مختلفة.</p>
+<button class="btn" onclick="alert('ترقبوا اكتشاف هذا العالم!')">
+اكتشف العالم
+</button>
+</div>
+
+<div class="card" id="about">
+<h3>📖 حول أثاناتوس</h3>
+<p>تطبيق لعشاق القصص والخيال والمغامرات، بتصميم عربي بسيط وأنيق.</p>
+</div>
+</main>
+
+<footer>
+© 2026 ATHANATOS
+</footer>
+</body>
+</html>
+```
